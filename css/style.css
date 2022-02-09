@@ -18,6 +18,8 @@
     align-items:center;
     position:relative;
     top:0px;
+    right:0px;
+    left:0px;
    
 }
 
@@ -272,7 +274,7 @@
 
 /*<================================================== Section 5 ==============================>*/
 
-/* Clients Section */
+/* Social media Section */
 #social{
     height:660px;
 }
