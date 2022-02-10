@@ -9,6 +9,9 @@
 :root{
   --navbar-height:60px;  
 }
+html{
+    scroll-behavior: smooth;
+}
 
 /*<========================================== Navigational bar ==============================>*/
 
@@ -16,11 +19,8 @@
 #navbar{
     display:flex;
     align-items:center;
-    position:relative;
+    position:sticky;
     top:0px;
-    right:0px;
-    left:0px;
-   
 }
 
 /* Navigation Bar: Logo */
@@ -45,10 +45,11 @@
     position:absolute;
     top:0px;
     left:0px;
+    right:0px;
     height:100%;
     width:100%;
     z-index:-1;
-    opacity:1;
+    opacity:0.7;
 }
 
 #navbar ul li{
@@ -80,14 +81,18 @@
     height:1000px;
     justify-content:center;
     align-items:center;
+    position:relative;
 }
 
 #home::before{
     content:"";
+    display:flex;
+    flex-direction:column;
     background:url('../img1/bg6.jpg') no-repeat center center/cover;
     position:absolute;
     top:0px;
     left:0px;
+    right:0px;
     height:80%;
     width:100%;
     z-index:-2;
@@ -125,10 +130,13 @@
 
 /* Services Section */
 #services{
-    margin:80px;
+    /* width:904px;
+    margin:auto; */
+    
     display:flex;
-    /* flex-direction: column; */
+    
     flex-wrap:wrap;
+    
     
 }
 #services .box{
@@ -152,7 +160,7 @@
     font-family: 'Andada Pro', serif;
 }
 
-.services-container .primary-h {
+#services-container .primary-h {
     font-size:2.5rem;
     padding:20px;
     text-align:center;
@@ -173,6 +181,7 @@
 /* Clients Section */
 #clients-section{
     height:660px;
+    position:relative;
 }
 
 #clients-section::before{
@@ -180,8 +189,14 @@
     background:url('../img1/bg5.jpg') no-repeat center center/cover;
     z-index:-1;
     position:absolute;
+   
+    left:0px;
+    right:0px;
     height:45%;
     width:100%;
+   
+    
+  
     
 }
 
@@ -189,6 +204,9 @@
     display:flex;
     align-items: center;
     justify-content: center;
+    position:relative;
+    right: 0px;
+
 }
 
 .client-item{
@@ -212,16 +230,26 @@
 /* Contact Section */
 
 #contact{
+    
     height:1120px;
+    display: flex;
+    flex-direction: column;
+    
+    
 }
 
 #contact::before{
+    
     content:"";
-    background:url('../img1/contactImage.jpg') no-repeat center center/cover;
+    
+    /* background:url('../img1/contactImage.jpg') no-repeat center center/cover; */
     z-index:-1;
     position:absolute;
+    left:0px;
+    right:0px;
     height:80%;
     width:100%;
+   
 
 }
 
@@ -235,9 +263,13 @@
 
 #contactBox{
 
-    display:flex;
+ 
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    
+    
     border:5px solid white;
     border-radius: 50px;
     width:800px;
@@ -268,6 +300,7 @@
 
 #contactBox input{
     display:block;
+   
     border-radius:33px;
     width:700px;
     padding:18px;
@@ -286,6 +319,8 @@
     background:url('../img1/bg4.jpg') no-repeat center center/cover;
     z-index:-1;
     position:absolute;
+    
+    right:0px;
     height:45%;
     width:100%;
     

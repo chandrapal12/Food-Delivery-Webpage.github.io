@@ -16,11 +16,12 @@
 
 /* Home Section */
 #home::before{
-    height:60%;
+    height:100%;
     
 }
 #home{
     height:300px;
+    
 }
 #home p{
     padding:0px 30px;
@@ -45,7 +46,7 @@
 
 
 /* Services Section */
-.services-container .primary-h {
+#services-container .primary-h {
     font-size: 1.5rem;
     padding: 100 20px;
     margin: 160px 10px 20px 10px;
@@ -99,6 +100,7 @@
 /* Contact Section */
 
 #contactBox{
+    
     width:500px;
     height:700px;
     margin :auto;
