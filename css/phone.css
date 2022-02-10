@@ -1,11 +1,17 @@
-body{
+/* body{
     background-color:red;
-}
+} */
 
 /* Navigation bar */
 
 #navbar{
     flex-direction:column;
+}
+
+#navbar ul li a {
+   font-size: 1rem;
+    padding: 10px 10px;
+  
 }
 
 /* Home Section */
@@ -22,25 +28,37 @@ body{
     width:300px;
 }
 #home h1{
-    padding:40px 10px;
+    margin:140px 10px 20px 10px;
     font-size: 0.9rem;
     width:300px;
     height:500px;
 }
 
+#btn {
+   
+    
+    font-size: 1.2rem;
+    margin: 30px;
+    padding: 5px 100px;
+   
+}
+
 
 /* Services Section */
-
+.services-container .primary-h {
+    font-size: 1.5rem;
+    padding: 100 20px;
+    margin: 160px 10px 20px 10px;
+  
+}
     
 #services{
     flex-direction: column;
 }
 #services .box{
     padding:10px;
-    /* border:4px solid tomato;
-    margin:0px 20px; */
-    /* border-radius:23px;
-    background-color: #e0e0e0; */
+    margin:20px;
+    height:480px;
 }
 #services .box img{
     height:200px;
@@ -48,15 +66,97 @@ body{
     margin:auto;
     padding-bottom:10px;
      */
-    
 }
 
 
 /* Clients Section */
 
+.client-item {
+    padding: 20px;
+}
+
+#clients img{
+    height:100px;
+}
+
+#clients{
+    flex-wrap:wrap;
+}
+
+#clients-section::before{
+   
+    height:75%;
+}
+
+.app{
+    padding:20px;
+}
+
+
+#socialmedia img{
+    height:100px;
+}
+
+
 /* Contact Section */
+
+#contactBox{
+    width:500px;
+    height:700px;
+    margin :auto;
+    padding:10px;
+
+}
+
+#contactBox .form-group{
+  
+    padding:10px;
+    text-align: center;
+    /* font-size:1.9rem; */
+}
+
+#contactBox input{
+  
+    
+    width:300px;
+    padding:10px;
+    margin:auto;
+}
+
+#contact::before{
+  
+    height:100%;
+
+
+}
+
+#contactBox .btn{
+   
+    margin:50px;
+    padding:10px 80px;
+    
+}
+
+
 
 /* Social medial Section */
 
+#social::before{
+   
+    height:75%;
+  
+    
+}
+
+#socialmedia{
+    flex-wrap: wrap;
+}
+
 /* Footer */
 
+
+.footer{
+    text-align: center;
+    font-size: 1.2rem;
+  
+}
